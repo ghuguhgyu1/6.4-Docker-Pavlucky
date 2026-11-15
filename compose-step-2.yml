@@ -1,0 +1,15 @@
+version: "3.8"
+
+services: {}
+
+volumes:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  pavluckyad-my-netology-hw:
+    name: pavluckyad-my-netology-hw
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
